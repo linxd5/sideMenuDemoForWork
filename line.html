@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width" />
+    <title>Maps</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/Maps.css" rel="stylesheet" />
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- your app's js -->
+    <script type="text/javascript" src="js/svg.min.js"></script>
+    <script type="text/javascript" src="lib/ionic/js/ionic.bundle.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/Ajax.js"></script>
+    <script type="text/javascript" src="js/indexnew.js"></script>
+</head>
+<body>
+    <!-- 头部导航栏开始 -->
+    <header class="bar bar-header" style="background:#ccc;">
+        <button id="back" class="button icon-left  ion-chevron-left" style="background:#ccc; border:none;"></button>
+        <h1 class="title">路线</h1>
+    </header>
+    <div class="bar bar-subheader">
+        <div class="left">
+            <button class="button"><img src="img/start_point.png" alt="选择起点" />选择起点</button>
+        </div>
+        <div class="right">
+            <button class="button"><img src="img/end_point.png" alt="选择终点" />选择终点</button>
+        </div>
+    </div>
+     <div id="svgContainer" class="scroll-content has-header has-footer">
+         <div id="Maps" class="Maps">
+         <!--指南针-->
+         <div  id="Pointer" style="width: 200px; height: 200px;position: fixed; left: -18px; top: 50px;">
+                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="100%" height="100%" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve"><g id="grp"><g>  <g> <circle opacity="0.64" fill="#91d2ef" enable-background="new    " cx="206.233" cy="346.293" r="140.855"/>       <ellipse opacity="0.23" fill="#91d2ef" enable-background="new    " cx="205.199" cy="287.801" rx="93.334" ry="74.195"/>  </g>    <g>     <text transform="matrix(1 0 0 1 75.9578 358.8281)" fill="#F5F5F5" font-family="'STXihei'" font-size="38">W</text>       <text transform="matrix(1 0 0 1 315.1526 358.8281)" fill="#F5F5F5" font-family="'STXihei'" font-size="38">E</text>      <text transform="matrix(1 0 0 1 197.6287 477.9961)" fill="#F5F5F5" font-family="'STXihei'" font-size="38">S</text>      <text transform="matrix(1 0 0 1 193.5251 243.9961)" fill="#F5F5F5" font-family="'STXihei'" font-size="38">N</text>  </g></g><g> <g>     <g>         <g>             <path fill="#A63936" d="M213.655,342.24c0.242,0.498,0.428,1.007,0.582,1.52l1.324,0.081l5.459-2.659l-15.844-112.961                  l-0.275,108.355C208.522,336.695,211.959,338.759,213.655,342.24z"/>          </g>            <g>             <path fill="#F05152" d="M204.901,336.578l0.275-108.356l-16.742,112.125l5.34,2.893l1.328-0.008                   c0.859-2.383,2.607-4.446,5.066-5.644C201.694,336.846,203.315,336.526,204.901,336.578z"/>            </g>            <g>             <path fill="#FFFFFF" d="M195.514,351.076c-0.791-1.623-1.1-3.354-0.994-5.035l-0.609-0.037l-5.461,2.658l15.844,112.961                    l0.266-104.886C200.832,356.725,197.256,354.652,195.514,351.076z"/>          </g>            <g>             <path fill="#BCBBB9" d="M209.002,355.729c-1.434,0.698-2.949,1.015-4.443,1.01l-0.266,104.887l16.74-112.125l-5.338-2.893                  l-1.033,0.006C214.678,350.364,212.602,353.976,209.002,355.729z"/>           </g>            <circle fill="#FFFFFF" cx="204.48" cy="346.279" r="8.522"/>     </g>    </g></g></g></svg>
+                </div>
+                <!--回到当前位置-->
+                <div class="location">
+                    <i class="icon ion-location"></i>
+                </div>
+                <!--地图的放大缩小-->
+                <div class="size">
+                    <i id="plus" class="icon ion-plus" onClick="zoom('zoomIn');"></i>
+                    <i id="minus" class="icon ion-minus" onClick="zoom('zoomOut');"></i>
+                </div>
+            
+        </div>
+    </div>
+ <!--   底部导航栏开始-->
+      <footer class="tabs bar-tabs tabs-icon-only" style="background:#000;">
+        <div class="foot">
+            <div class="foot_show">
+                <div class="foot_left"><i class="icon ion-close"></i></div>
+                <div class="foot_right">
+                    <div class="r_left">
+                        <span><i class="icon ion-clock"></i></span>
+                        <span class="text">剩余时间</span>
+                    </div>
+                    <div class="r_right">
+                        <span><i class="icon ion-shuffle"></i></span>
+                        <span class="text">剩余路程</span>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_btn">
+                <a href="javascript:void(0);" class="bar bar-footer">开始导航</a>
+            </div>
+        </div>
+     </footer>
+
+    <!-- 头部导航栏结束 -->
+     <script type="text/javascript" src="js/map.js"></script>
+     <script type="text/javascript" src="js/Maps.js"></script>
+     <script type="text/javascript"  src="js/line.js"></script>
+</body>
+</html>

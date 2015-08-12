@@ -1,0 +1,318 @@
+/* 导航开始*/
+/*a:active,a:hover,a:visited,a:link{color: #fff;}*/
+.foot{position: relative; width: 100%; height: 100%;}
+.foot_show{position:relative; width: 100%; height: 49px;}
+.foot_show .foot_text{text-align: center;}
+.foot_show .foot_left{width: 20%; height: 49px; line-height: 49px; float: left; text-align: center; color: #fff; border-right: 1px solid #fff; padding-top: 10px;}
+.foot_show .foot_left i{ font-size: 30px;}
+.foot_show .foot_right{width: 80%; height: 100%; float: right;}
+.foot_show .foot_right .r_left{width: 50%; height: 49px; float: left;text-align: center; padding: 1px; color: #fff; font-size: 20px;}
+.foot_show .foot_right .r_right{width: 50%; height: 49px; float: right; text-align: center; padding: 1px; color:#fff; font-size: 20px;}
+.foot_show .foot_right span.icon{font-size: 12px; display: block; height:24px;}
+.foot_show .foot_right span.text{font-size: 12px; display:inline-block; height: 12px;}
+.foot_btn{position: absolute; top: 0; left: 0; z-index: 10; width: 100% ; height: 49px; text-align: center; color: #fff; visibility:hidden; }
+.foot_btn a{position: absolute;z-index: 10;; height: 49px; text-decoration:none; line-height: 49px; text-align: center; display: block;background: #000;}
+/* 导航结束*/
+
+/*路线开始*/
+header.bar.bar-header.bar-positive {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+}
+header.bar.bar-header.bar-positive a.button.icon-left.ion-chevron-left.button-clear {
+    color: #6c6c6c;
+}
+header.bar.bar-header.bar-positive h1.title{
+    color: #000000;
+    font-family: STHeiti Light;
+}
+div.bar.bar-subheader {
+    height: 137px;
+    background-color: rgba(0,0,0,0.5);
+}
+div.bar.bar-subheader div {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+div.bar.bar-subheader div button {
+    width: 253px;
+    height: 69px;
+    position: relative;
+    top: 50%;
+    margin-top: -34px;
+    color: #6c6c6c;
+    font-family: STHeiti Light;
+    border: 0;
+}
+
+div.bar.bar-subheader > img {
+    position: absolute;
+    top: 34px;
+}
+
+div.bar.bar-subheader div button img {
+    width: 26px;
+    height: 26px;
+}
+
+div.bar.bar-subheader div.left button {
+    float: right;
+}
+
+div.bar.bar-subheader div.left button.button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    /* http://css3files.com/2015/03/09/creating-gradient-borders-using-css3/ */
+    border-right: 1px solid transparent;
+    -webkit-border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    -moz-border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    -o-border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    border-image-slice: 1;
+}
+
+div.bar.bar-subheader div.right button.button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    /* http://css3files.com/2015/03/09/creating-gradient-borders-using-css3/ */
+    border-left: 1px solid transparent;
+    -webkit-border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    -moz-border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    -o-border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    border-image: linear-gradient(#ffffff, #6c6c6c, #ffffff);
+    border-image-slice: 1;
+}
+/*路线结束*/
+
+/*sideMenu*/
+
+/*
+ion-nav-view.view-container ion-side-menus.pane.view ion-side-menu.menu-left ion-header-bar.bar-stable.bar.bar-header {
+    background-color: black;
+}
+
+ion-nav-view.view-container ion-side-menus.pane.view ion-side-menu.menu-left ion-content {
+    background: #4c4c4c;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+
+ion-nav-view.view-container ion-side-menus.pane.view ion-side-menu.menu-left ion-content ion-list {
+    background: #4c4c4c;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+
+ion-nav-view.view-container {
+    background: #4c4c4c;
+}
+*/
+
+
+/*
+    CSS for /templates/menu.html
+*/
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-header-bar {
+    background: #000000;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-header-bar h1.title {
+    color: white;
+    text-align: center;
+    left: 0px             !important;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header {
+    background: rgba(0,0,0,0.7);
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll {
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list {
+    padding-top: 15px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex {
+    border-width: 0;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content {
+    background: rgba(0,0,0,0.7);
+    padding: 20px 0px 0px 20px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item {
+    background: #000000;
+    color: #ffffff;
+    border-width: 0;
+    border-left-width: 2px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.orange {
+    border-left-color: #ff8a00;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.blue {
+    border-left-color: #1e86fe;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.pink {
+    border-left-color: #f05656;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.green {
+    border-left-color: #6ece5f;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.item-icon-left.item-icon-right i.icon.orange {
+    color: #ff8a00;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.item-icon-left.item-icon-right i.icon.blue {
+    color: #1e86fe;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.item-icon-left.item-icon-right i.icon.pink {
+    color: #f05656;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.item-icon-left.item-icon-right i.icon.green {
+    color: #6ece5f;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.item-icon-left.item-icon-right i.icon.icon-size-change {
+    font-size: 20px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu.menu.menu-left ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list ion-item.item.item-complex a.item-content a.item.item-icon-left.item-icon-right img {
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    height: 35%;
+    font-size: 10px;
+}
+
+/*
+    CSS for /template/about.html
+*/
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane {
+    font-family: "STHeiti Light";
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-bar.bar-stable.nav-bar-container div.nav-bar-block ion-header-bar.bar-stable.bar.bar-header {
+    background: #e5e5e5;
+    border-width: 0;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-bar.bar-stable.nav-bar-container div.nav-bar-block ion-header-bar.bar-stable.bar.bar-header div.title {
+    text-align: center;
+    left: 0px             !important;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.little-monkey {
+    padding-top: 50px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.little-monkey img {
+    width: 102px;
+    height: 128px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.little-monkey div {
+    color: #6c6c6c;
+    padding: 10px;
+    font-family: "STHeiti Light";
+    font-size: 1.4em;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card button.item.item-text-wrap {
+    font-family: "STHeiti Light";
+    font-size: 1.1em;
+    color: black;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card {
+    background-color: #6c6c6c            !important;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-right i.ion-chevron-right {
+    font-size: 1.2em;
+    color: #8c8c8c;
+}
+
+/*
+    CSS for /templates/accountAndSecurity.html
+*/
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list {
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label {
+    font-family: "STHeiti Light";
+    padding: 20px 10px 0px 10px;
+    border-width: 0;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label span.input-label {
+    font-family: "STHeiti Light";
+    font-size: 1.1em;
+    padding: 0px 8px 0px 20px;
+    color: black;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label input {
+    background: #f0eeee;
+    padding: 19px 19px;
+    font-size: 1em;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label.security-code span {
+    display: block;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label.security-code input {
+    width: 60%;
+    display: inline-block;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label.security-code a {
+    float: right;
+    width: 25%;
+    margin-top: 3px;
+    background: #f0eeee;
+    color: #1e86fe;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label input::-webkit-input-placeholder {
+    color: #6c6c6c;
+    font-size: 1em;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label input:-moz-placeholder {
+    color: #6c6c6c;
+    opacity: 1;
+    font-size: 1em;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label input::-moz-placeholder {
+    color: #6c6c6c;
+    opacity: 1;
+    font-size: 1em;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list label.item.item-input.item-stacked-label input:-ms-input-placeholder {
+    color: #6c6c6c;
+    font-size: 1em;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list a.button.submit {
+    margin: 40px;
+    background-color: #1e86fe;
+    color: white;
+}
