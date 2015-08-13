@@ -393,6 +393,14 @@ ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.m
     background-color: #e5e5e5;
 }
 
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-left img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 45%;
+    font-size: 18px;
+}
+
 ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-left div {
     display: inline-block;
     float: right;
