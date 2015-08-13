@@ -230,17 +230,21 @@ ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.m
     padding: 10px;
     font-family: "STHeiti Light";
     font-size: 1.4em;
-}
-
-ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card button.item.item-text-wrap {
-    font-family: "STHeiti Light";
-    font-size: 1.1em;
-    color: black;
+    margin-bottom: 35px;
 }
 
 ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card {
-    background-color: #6c6c6c            !important;
+    /*background-color: #6c6c6c            !important;*/
+    background-color: #f0eeee;
 }
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-right {
+    font-family: "STHeiti Light";
+    font-size: 1.1em;
+    color: black;
+    background-color: #f0eeee;
+}
+
 
 ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-right i.ion-chevron-right {
     font-size: 1.2em;
@@ -312,7 +316,91 @@ ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.m
 }
 
 ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list a.button.submit {
-    margin: 40px;
+    margin: 20px;
     background-color: #1e86fe;
     color: white;
 }
+
+/*css for /templates/personalCenter.html*/
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_1 {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    margin: 30px auto 10px auto;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_2 {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #e7e7e7;
+    margin: auto;
+    position: absolute;
+    top: 0;  left: 0;  bottom: 0;  right: 0;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_3 {
+    width: 90%;
+    height: 90%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    margin: auto;
+    position: absolute;
+    top: 0;  left: 0;  bottom: 0;  right: 0;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_4 {
+    width: 95%;
+    height: 95%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #bebebe;
+    margin: auto;
+    position: absolute;
+    top: 0;  left: 0;  bottom: 0;  right: 0;
+    overflow: hidden;
+    background-image: url("../img/little_monkey_icon.jpg");
+    -webkit-background-size: 80px;
+    background-size: 80px;
+    background-position-x: -4px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.userName {
+    /*margin-bottom: 60px;*/
+    margin-bottom: 35px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.userName div {
+    font-family: "STHeiti Light";
+    font-size: 1em;
+    text-align: center;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card {
+    border-width: 0;
+    margin-top: 15px;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-left {
+    background-color: #e5e5e5;
+}
+
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-left div {
+    display: inline-block;
+    float: right;
+    font-family: "STHeiti Light";
+    font-size: 1em;
+    text-align: center;
+    color: #6c6c6c;
+    margin-right: 10px;
+}
+
+

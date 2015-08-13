@@ -8,13 +8,10 @@ var layer1,layer4,layer5;
  */
 
  window.onload=function() {
-     // 显式设置svgContainer的宽高
+     // 显式设置svgContainer的宽高(playlists.html)
      var svgContainer = document.getElementById("svgContainer");
      svgContainer.style.width = document.documentElement.clientWidth + "px";
      svgContainer.style.height = document.documentElement.clientHeight - 70 + "px";
-
-     console.log(svgContainer.style.width);
-     console.log(svgContainer.style.height);
 
      paper = SVG('Maps');
      console.log(paper);

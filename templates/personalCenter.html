@@ -1,25 +1,37 @@
-<ion-modal-view>
-    <ion-header-bar>
-        <h1 class="title">Hello</h1>
-        <div class="buttons">
-            <button class="button button-clear" ng-click="closeLogin()">Close</button>
-        </div>
-    </ion-header-bar>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<ion-view view-title="个人中心">
     <ion-content>
-        <form ng-submit="doLogin()">
-            <div class="list">
-                <label class="item item-input">
-                    <span class="input-label">Username</span>
-                    <input type="text" ng-model="loginData.username">
-                </label>
-                <label class="item item-input">
-                    <span class="input-label">Password</span>
-                    <input type="password" ng-model="loginData.password">
-                </label>
-                <label class="item">
-                    <button class="button button-block button-positive" type="submit">Log in</button>
-                </label>
-            </div>
-        </form>
+        <div class="circle_1" id="pcCircle"><div class="circle_2"><div class="circle_3"><div class="circle_4"></div></div></div></div>
+        <div class="userName">
+            <div>用户名</div>
+            <div>123456789</div>
+        </div>
+        <div class="card">
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-iphone"></i>
+                手机
+                <div>123456789</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-social-github-outline"></i>
+                QQ
+                <div>123456</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-ios-email-outline"></i>
+                邮箱
+                <div>123456@example.com</div>
+            </a>
+        </div>
     </ion-content>
-</ion-modal-view>
+</ion-view>
+</body>

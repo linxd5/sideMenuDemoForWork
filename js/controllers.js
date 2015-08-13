@@ -16,4 +16,15 @@ angular.module("testApp.controllers", [])
 
     .controller("PlaylistCtrl", function ($scope, $stateParams) {
 
+    })
+
+    .controller("PersonalCenterCtrl", function ($scope) {
+        // 显示设置pcCircle的宽高(personalcenter.html)
+        var pcCircle = document.getElementById("pcCircle");
+        var pcCircle_min = Math.min(document.documentElement.clientWidth, document.documentElement.clientHeight);
+        pcCircle.style.width = pcCircle_min*0.3 + "px";
+        pcCircle.style.height = pcCircle_min*0.3 + "px";
+
+        console.log(pcCircle.style.width);
+        console.log(pcCircle.style.height);
     });

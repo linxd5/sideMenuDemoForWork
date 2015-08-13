@@ -37,7 +37,8 @@ angular.module('testApp', ['ionic', 'testApp.controllers'])
                 url: '/personalCenter',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/personalCenter.html'
+                        templateUrl: 'templates/personalCenter.html',
+                        controller: "PersonalCenterCtrl"
                     }
                 }
             })
