@@ -246,9 +246,9 @@ ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.m
 }
 
 
-ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-right i.ion-chevron-right {
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div.card a.item.item-icon-right i.ion-ios-arrow-right {
     font-size: 1.2em;
-    color: #8c8c8c;
+    color: #6c6c6c;
 }
 
 /*
@@ -411,4 +411,35 @@ ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.m
     margin-right: 10px;
 }
 
+ion-nav-view.view-container div.pane ion-side-menus.view ion-side-menu-content.menu-content.pane ion-nav-view.view-container div.pane ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll a.button.button-block {
+    margin: 50px 90px;
+    background-color: #1e86fe;
+    color: white;
+}
 
+/*css for templates/personalCenterEdit.html*/
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-header-bar {
+    background-color: #e5e5e5;
+    position: relative;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-header-bar div.title {
+    text-align: center;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-header-bar button.button.ion-ios-arrow-back {
+    color: #6c6c6c;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-header-bar button.button.button-clear {
+    background-color: #bababa;
+    color: white;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_1 {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    margin: 30px auto 10px auto;
+}

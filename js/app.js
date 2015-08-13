@@ -71,6 +71,16 @@ angular.module('testApp', ['ionic', 'testApp.controllers'])
                 }
             })
 
+            .state("app.personalCenter.personalCenterEdit", {
+                url: "/personalCenterEdit" ,
+                views: {
+                    "personalCenter": {
+                        templateUrl: "templates/personalCenterEdit.html",
+                        controller: "personalCenterEditCtrl"
+                    }
+                }
+            });
+
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/playlists');
 

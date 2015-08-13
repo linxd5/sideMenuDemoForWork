@@ -1,6 +1,17 @@
 angular.module("testApp.controllers", [])
 
     .controller("AppCtrl", function ($scope, $ionicModal, $timeout) {
+        $ionicModal.fromTemplateUrl("templates/personalCenterEdit.html", {
+            scope: $scope,
+            controller: "PersonalCenterEditCtrl",
+            animation: "slide-in-up"
+        }).then(function (modal) {
+            $scope.modal = modal;
+        });
+
+        $scope.personalCenterEdit = function () {
+            $scope.modal.show();
+        };
     })
 
     .controller("PlaylistsCtrl", function ($scope) {
@@ -27,4 +38,8 @@ angular.module("testApp.controllers", [])
 
         console.log(pcCircle.style.width);
         console.log(pcCircle.style.height);
+    })
+
+    .controller("PersonalCenterEditCtrl", function ($scope) {
+        alert("hello");
     });
