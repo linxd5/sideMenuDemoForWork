@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
+<body ng-controller="personalCenterEditCtrl">
     <ion-modal-view>
         <ion-header-bar>
             <button class="button button-icon icon ion-ios-arrow-back"></button>
@@ -12,7 +12,28 @@
             <button class="button button-clear button">保存</button>
         </ion-header-bar>
         <ion-content>
-            <div class="circle_1"><div class="circle_2"></div></div>
+            <div class="circle_1" id="pcEditCircle">
+                <div class="card"><span>头像</span></div>
+                <div class="circle_2"></div>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <span class="input-label">用户名：</span>
+                    <input type="text" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">手机：</span>
+                    <input type="text" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">QQ：</span>
+                    <input type="text" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">邮箱：</span>
+                    <input type="text" />
+                </label>
+            </div>
         </ion-content>
     </ion-modal-view>
 </body>

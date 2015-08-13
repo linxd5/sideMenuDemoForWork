@@ -14,6 +14,8 @@
 .foot_btn a{position: absolute;z-index: 10;; height: 49px; text-decoration:none; line-height: 49px; text-align: center; display: block;background: #000;}
 /* 导航结束*/
 
+/*Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;*/
+
 /*路线开始*/
 header.bar.bar-header.bar-positive {
     background-color: #e5e5e5;
@@ -433,13 +435,70 @@ div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-header-bar 
 }
 
 div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-header-bar button.button.button-clear {
+    font-family: "STHeiti Light";
     background-color: #bababa;
     color: white;
+    padding: 0 10px;
+    font-size: 1.1em;
 }
 
+/*div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll {*/
+    /*width: 30%;*/
+    /*height: 30%;*/
+    /*position: relative;*/
+    /*margin: 30px auto 10px auto;*/
+    /*border: 1px solid #000;*/
+/*}*/
+
 div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_1 {
-    width: 30%;
-    height: 30%;
     position: relative;
-    margin: 30px auto 10px auto;
+    margin: 10px auto 10px auto;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_1 div.card {
+    width: 94%;
+    height: 70%;
+    background-color: #f0eeee;
+    position: absolute;
+    top: 40px;  left: 0;  bottom: 0;  right: 0;
+    margin: 10px auto;
+    text-align: center;
+    z-index: -100;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_1 div.card span {
+    position: absolute;
+    bottom: 7px; left: 0; right: 0;
+    margin: 0; padding: 0;
+    color: black;
+    font-size: 1.1em;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll div.circle_2 {
+    width: 24%;
+    height: 60%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #bebebe;
+    margin: auto;
+    position: absolute;
+    top: 0;  left: 0;  bottom: 0;  right: 0;
+    overflow: hidden;
+    background-image: url("../img/little_monkey_icon.jpg");
+    -webkit-background-size: 80px;
+    background-size: 80px;
+    background-position-x: -4px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list.list-inset {
+    margin-top: 50px;
+}
+
+div.modal-backdrop.active div.modal-wrapper ion-modal-view.modal ion-content.scroll-content.ionic-scroll.has-header div.scroll div.list.list-inset label.item.item-input {
+    margin-top: 20px;
+    background-color: #f0eeee;
 }

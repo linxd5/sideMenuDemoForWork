@@ -10,8 +10,17 @@ angular.module("testApp.controllers", [])
         });
 
         $scope.personalCenterEdit = function () {
+            // 显示设置pcCircle的宽高(personalcenter.html)
             $scope.modal.show();
+            var pcEditCircle = document.getElementById("pcEditCircle");
+            var pcEditCircle_min = Math.min(document.documentElement.clientWidth, document.documentElement.clientHeight);
+            pcEditCircle.style.width = pcEditCircle_min + "px";
+            pcEditCircle.style.height = pcEditCircle_min*0.4 + "px";
+
+            console.log(pcEditCircle.style.width);
+            console.log(pcEditCircle.style.height);
         };
+
     })
 
     .controller("PlaylistsCtrl", function ($scope) {
